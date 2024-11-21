@@ -42,16 +42,30 @@ header {
     -webkit-backdrop-filter: blur(10px); 
 }
 
+.nav-left-side {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.logo-svg {
+    display: flex; 
+    align-items: center; 
+}
+
 .nav-title {
+    margin-left: 10px;
     font-size: 1.5rem;
     color: white;
+    margin-top: 5px;
+    margin-bottom: 5px; 
 }
 
 .nav-links {
-    margin-left: auto;
     display: flex;
     gap: 20px;
     align-items: center;
+    white-space: nowrap;
 }
 
 .nav-links a {
@@ -67,7 +81,6 @@ header {
     background-color: white;
 }
 
-/* General Section Design */
 #homeSection, #aboutSection {
     position: relative; 
     width: 100%; 
@@ -77,7 +90,6 @@ header {
     align-items: center;
 }
 
-/* Background Image Styling */
 #homeSection img {
     position: absolute;
     top: 0;
@@ -88,14 +100,15 @@ header {
     z-index: 0; 
 }
 
-/* Content Styling */
 .left-side-home {
     position: relative; 
     z-index: 1; 
     color: white; 
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
+    border-left: 2px solid white;
+    box-shadow: 100px 0px 50px rgba(0, 0, 0, 0.6);
     padding: 20px;
-    max-width: 50%;
+    max-width: 40%;
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
@@ -115,17 +128,18 @@ header {
 
 .left-side-home h1, .y-center h1 {
     font-size: 50px;
-    margin-bottom: 20px;
+    margin: 0px 0px 20px 40px;
     text-shadow: 2px 2px 5px black;
 }
 
 .left-side-home p, .y-center p {
     font-size: 22px;
+    margin: 0px 0px 0px 40px;
     line-height: 1.7;
     text-shadow: 1px 1px 3px black;
 }
 
-
+/* Article Section */
 #articleSection {
     max-width: 1400px;
     margin: 20px auto;
@@ -212,6 +226,7 @@ header {
     line-height: 1.6;
 }
 
+/* Contact Us Section Design */
 .contact-container {
     display: flex;
     justify-content: space-between;
@@ -223,7 +238,6 @@ header {
     box-shadow: 0 0 20px black;
 }
 
-/* Contact Us Section Design */
 .contact-form, .contact-info {
     width: 48%;
 }
@@ -449,6 +463,12 @@ header.expanded {
         padding: 10px;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .logo-svg {
+        align-self: flex-start; 
+        font-size: 1.2rem; 
+        margin-left: 20px; 
     }
 
     .nav-title {
