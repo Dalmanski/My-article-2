@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gacha Games</title>
+    <link rel="icon" href="Pictures/CTU_new_logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">My Gacha Games</div>
+        <div class="expand-btn" onclick="toggleHeader()">Close</div>
+        <nav class="nav-links">
+            <a href="#" id="homeLink">Home</a>
+            <a href="#" id="articleLink">Article</a>
+            <a href="#" id="aboutLink">About</a>
+            <a href="#" id="contactLink">Contact</a>
+            <a href="#" id="loginBtn">Log-in</a>
+        </nav>
+    </header>    
+
+    <div class="section" id="homeSection">
+        <h1>Exploring the World of Gacha Games: A Gateway to Endless Adventures</h1>
+        <p>
+            Gacha games have become a global sensation, blending strategy, luck, and storytelling to create an addictive gaming experience. Inspired by Japanese capsule-toy vending machines, these games invite players to "pull" for characters, items, or upgrades, often leading to thrilling moments of discovery. With stunning art, intricate lore, and dynamic events, popular titles like Genshin Impact, Honkai: Star Rail, and Blue Archive continue to captivate millions. Whether you're chasing rare characters or immersing yourself in their expansive worlds, gacha games offer endless excitement for players of all levels.
+        </p>
+    </div>
+
+    <div class="section" id="articleSection" style="display: none;">
+        <div class="page-title">MY GACHA GAMES I'VE PLAYED</div>
+        <div class="image-grid">
+
+            <div class="image-section">
+                <img src="Pictures/Wuwa.jpg" alt="Wuthering Wave">
+                <div class="text-content">
+                    <div class="title">Wuthering Waves</div>
+                    <div class="description">
+                        Wuthering Waves is a free-to-play open-world action role-playing game developed by Kuro Games. Players explore a vast, futuristic world, battling enemies with various weapons and abilities. The game features a gacha system for obtaining characters and weapons, and offers a variety of quests, challenges, and exploration opportunities.
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-section">
+                <img src="Pictures/hsr.jpeg" alt="Honkai: Star Rail">
+                <div class="text-content">
+                    <div class="title">Honkai: Star Rail</div>
+                    <div class="description">
+                        Honkai: Star Rail is a turn-based role-playing game developed by HoYoverse. Players embark on a cosmic journey aboard the Astral Express, exploring diverse planets and battling enemies using unique character abilities. The game features a gacha system for collecting characters and weapons, and offers a rich storyline, engaging combat, and stunning visuals.
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-section">
+                <img src="Pictures/r1999.jpg" alt="Reverse: 1999">
+                <div class="text-content">
+                    <div class="title">Reverse: 1999</div>
+                    <div class="description">
+                        Reverse: 1999 is a turn-based tactical RPG set in a time-looping world. Players assume the role of a Timekeeper, traveling through different eras to uncover the mystery behind the "Storm" that has reversed time. The game features strategic combat, character customization, and a unique time-bending mechanic.
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-section">
+                <img src="Pictures/ZZZ.jpg" alt="Zenless Zone Zer">
+                <div class="text-content">
+                    <div class="title">Zenless Zone Zero</div>
+                    <div class="description">
+                        Zenless Zone Zero is an urban fantasy action RPG developed by HoYoverse. Players explore a futuristic city, battling otherworldly beings known as Hollows. The game features a dynamic combat system, allowing players to switch between characters and unleash powerful combos. It also includes a gacha system for acquiring characters and weapons.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section" id="aboutSection" style="display: none;">
+        <h1>About me playing Gacha Games</h1>
+        <p>
+            I love playing gacha games and enjoy the excitement of summoning new characters or items. Games like Genshin Impact, Honkai: Star Rail, Wuthering Waves, and Punishing: Gray Raven are some of my favorites. I like saving resources for special pulls, building strong teams, and exploring the amazing stories and worlds these games offer. Whether I get lucky or not, every pull is an adventure, and I enjoy sharing those moments with others.
+        </p>
+    </div>
+
+    <div class="section" id="contactSection" style="display: none;">
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2>Contact our team</h2>
+                <form>
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="phone">Phone #:</label>
+                    <input type="text" id="phone" name="phone" required>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Contact Us</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2>CTU Danao Information</h2>
+                <p><strong>Address:</strong> Cebu Technological University, Danao City, Cebu, Philippines</p>
+                <p><strong>Contact Number:</strong> (032) 354 3660</p>
+                <p><strong>Email:</strong> info-danao@ctu.edu.ph</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/ctudanaoofficial" target="_blank">
+                        <i class="fab fa-facebook fa-2x social-logo"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@ctupremier2532/featured" target="_blank">
+                        <i class="fab fa-youtube fa-2x social-logo"></i>
+                    </a>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <i>This page was created by Jayrald John Dalman</i>
+    </footer>
+
+    <div id="modal" class="modal">
+        <span id="closeImg" class="close">&times;</span> <!-- Display X at the top right -->
+        <img class="modal-content-in-img" id="modalImg">
+        <div class="modal-caption" id="caption"></div> 
+    </div>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content-in-form">
+            <span id="closeLogin" class="close">&times;</span>
+            <h2>Log-in</h2>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Log-in</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="signupLink">Sign-up here</a></p>
+        </div>
+    </div>
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content-in-form">
+            <span id="closeSignup" class="close">&times;</span>
+            <h2>Sign-up</h2>
+            <form>
+                <label for="signupEmail">Email:</label>
+                <input type="email" id="signupEmail" name="signupEmail" required>
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" name="signupPassword" required>
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <button type="submit">Sign-up</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
