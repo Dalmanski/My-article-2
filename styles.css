@@ -42,6 +42,7 @@ header {
     -webkit-backdrop-filter: blur(10px); 
 }
 
+/* Home section */
 .nav-left-side {
     display: flex;
     flex-direction: row;
@@ -165,7 +166,7 @@ header {
 
 .video-with-description h1 {
     width: 50%;
-    font-size: 55px;
+    font-size: 40px;
     text-align: left;
     color: white;
 }
@@ -173,7 +174,7 @@ header {
 .page-title {
     text-align: center;
     color: white;
-    padding: 50px;
+    padding: 30px;
     font-size: 2.5rem;
     letter-spacing: 2px;
     text-shadow: 2px 2px 5px black;
@@ -221,12 +222,12 @@ header {
 .description {
     padding: 15px;
     color: #b8b8b8;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: justify;
     line-height: 1.6;
 }
 
-/* Contact Us Section Design */
+/* Contact Us Section */
 .contact-container {
     display: flex;
     justify-content: space-between;
@@ -465,16 +466,11 @@ header.expanded {
         background-color: rgba(0, 0, 0, 0.5);
     }
 
-    .logo-svg {
-        align-self: flex-start; 
-        font-size: 1.2rem; 
-        margin-left: 20px; 
-    }
-
     .nav-title {
         align-self: flex-start; 
-        font-size: 1.2rem; 
+        font-size: 0.8rem; 
         margin-left: 20px; 
+        max-width: 100px;
     }
 
     .nav-links {
@@ -490,6 +486,7 @@ header.expanded {
         padding: 15px;
         text-align: center;
         max-width: 100%;
+        border-right: 2px solid white;
     }
 
     .left-side-home h1 {
@@ -502,6 +499,24 @@ header.expanded {
 
     .expand-btn {
         display: block;
+    }
+
+    .video-with-description {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
+    
+    .video-with-description video {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .video-with-description h1 {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
     }
 
     .contact-container {
@@ -546,10 +561,13 @@ header.expanded {
     }
 
     .page-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        padding: 20px;
     }
 
     #homeSection h1, #aboutSection h1 {
+        margin-left: 5%; 
+        margin-right: 5%; 
         font-size: 2.5rem; 
     }
 
