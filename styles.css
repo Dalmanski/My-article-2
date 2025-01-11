@@ -165,10 +165,14 @@ header {
 }
 
 .video-with-description h1 {
-    width: 50%;
-    font-size: 40px;
+    font-size: 50px;
+    line-height: 50px;
     text-align: left;
     color: white;
+}
+
+.description p {
+    font-size: 20px;
 }
 
 .page-title {
